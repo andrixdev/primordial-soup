@@ -17,13 +17,13 @@ public class StarXyziSeniorDataSmith : MonoBehaviour
 {
 	public TextAsset textAsset; // test-aa.txt
 
-	// RGBAFloat data works well for values in [-1, 1] so we need some wee data pre-scaling
+	// RGBAFloat data works well for values in [0, 1] (not [-1, 1] btw) so we need some wee data pre-scaling
 
-	// Rescaling for xyz positions ([0, 4] -> [-1.0f, 1.0f])
+	// Rescaling for xyz positions ([0, 4] -> [0, 1.0f])
 	public float xyzMin = 0.0f;
 	public float xyzMax = 4.0f;
 
-	// Rescaling for intensity ([-100, 0] -> [-1.0f, 1.0f])
+	// Rescaling for intensity ([-100, 0] -> [0, 1.0f])
 	public float intensityMin = -100.0f;
 	public float intensityMax = 0.0f;
 
@@ -50,6 +50,9 @@ public class StarXyziSeniorDataSmith : MonoBehaviour
 		// Build le textures
 		int quarticRoot = 50; // Keep it a little greater than the quartic root of the number of items, max 127, recommended max 50 (6.250.000 points)
         CreateTextures(quarticRoot);
+
+		// Save textures in PNG
+		SaveTextures();
     }
 
     void Start()
@@ -76,10 +79,10 @@ public class StarXyziSeniorDataSmith : MonoBehaviour
 		for (int i = 0; i < lines.Length; i++)
 		{
 			string[] fields = lines[i].Split(' ');
-			float x = math.remap(xyzMin, xyzMax, -1.0f, 1.0f, Convert.ToSingle(fields[0], CultureInfo.InvariantCulture));
-			float y = math.remap(xyzMin, xyzMax, -1.0f, 1.0f, Convert.ToSingle(fields[1], CultureInfo.InvariantCulture));
-			float z = math.remap(xyzMin, xyzMax, -1.0f, 1.0f, Convert.ToSingle(fields[2], CultureInfo.InvariantCulture));
-			float intensity = math.remap(intensityMin, intensityMax, -1.0f, 1.0f, Convert.ToSingle(fields[3], CultureInfo.InvariantCulture));
+			float x = math.remap(xyzMin, xyzMax, 0, 1.0f, Convert.ToSingle(fields[0], CultureInfo.InvariantCulture));
+			float y = math.remap(xyzMin, xyzMax, 0, 1.0f, Convert.ToSingle(fields[1], CultureInfo.InvariantCulture));
+			float z = math.remap(xyzMin, xyzMax, 0, 1.0f, Convert.ToSingle(fields[2], CultureInfo.InvariantCulture));
+			float intensity = math.remap(intensityMin, intensityMax, 0, 1.0f, Convert.ToSingle(fields[3], CultureInfo.InvariantCulture));
 			
 			StarXyziBit xyzi = new StarXyziBit();
 
@@ -166,5 +169,21 @@ public class StarXyziSeniorDataSmith : MonoBehaviour
 
 		// Log time taken
 		Debug.Log("<color=#009090ff>[Senior Data Smith] Generated textures in " + (Time.realtimeSinceStartup - timeStart) + " seconds 👌</color>");
+	}
+
+	private void SaveTextures()
+	{
+		float time = Time.realtimeSinceStartup;
+		
+		byte[] bytes1 = texture1.EncodeToPNG();//ImageConversion.EncodeToPNG(texture1);
+		byte[] bytes2 = texture2.EncodeToPNG();
+		//byte[] bytes3 = texture3.EncodeToPNG();
+
+		System.IO.File.WriteAllBytes(Application.dataPath + "/Starviz/Data/texture1.png", bytes1);
+		System.IO.File.WriteAllBytes(Application.dataPath + "/Starviz/Data/texture2.png", bytes2);
+		//System.IO.File.WriteAllBytes(Application.dataPath + "/Starviz/Data/texture3.png", bytes3);
+	
+		Debug.Log("<color=#ff33ccff>[Senior Data Smith] Encoded and saved textures in " + (Time.realtimeSinceStartup - time) + " seconds 👌</color>");
+			
 	}
 }
