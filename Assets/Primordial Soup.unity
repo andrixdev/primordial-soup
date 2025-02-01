@@ -3587,6 +3587,55 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 890635753}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &925050205
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 925050206}
+  - component: {fileID: 925050207}
+  m_Layer: 0
+  m_Name: StarvizVolume
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &925050206
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 925050205}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2105472870}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &925050207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 925050205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IsGlobal: 1
+  priority: 0
+  blendDistance: 0
+  weight: 1
+  sharedProfile: {fileID: 11400000, guid: e8d024aa21afefc4d85f16bbd597cb8b, type: 2}
 --- !u!1 &989557155
 GameObject:
   m_ObjectHideFlags: 0
@@ -3619,8 +3668,8 @@ MonoBehaviour:
   textAsset: {fileID: 4900000, guid: 7dd1b14c1ca9646479062a582752f518, type: 3}
   xyzMin: 0
   xyzMax: 4
-  intensityMin: -100
-  intensityMax: 0
+  intensityMin: -24
+  intensityMax: -18
   starXyziData:
     title: 
     version: 
@@ -4217,6 +4266,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1439239158
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1439239159}
+  m_Layer: 0
+  m_Name: CamTarget
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1439239159
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1439239158}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4, y: 8, z: 8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1459731014
 GameObject:
   m_ObjectHideFlags: 0
@@ -4340,6 +4420,8 @@ GameObject:
   - component: {fileID: 1495809440}
   - component: {fileID: 1495809439}
   - component: {fileID: 1495809438}
+  - component: {fileID: 1495809443}
+  - component: {fileID: 1495809442}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -4543,13 +4625,47 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1495809437}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.73, y: -0.1494565, z: -12.29}
+  m_LocalRotation: {x: -0.46193975, y: -0.19134171, z: 0.19134171, w: 0.8446232}
+  m_LocalPosition: {x: 8, y: -4, z: -4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -45, y: -45, z: 45}
+--- !u!95 &1495809442
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1495809437}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1495809443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1495809437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4ce5fa62745ae2438409e07e842117e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1439239159}
 --- !u!1 &1497179290
 GameObject:
   m_ObjectHideFlags: 0
@@ -5078,6 +5194,8 @@ GameObject:
   - component: {fileID: 1640125871}
   - component: {fileID: 1640125870}
   - component: {fileID: 1640125869}
+  - component: {fileID: 1640125873}
+  - component: {fileID: 1640125872}
   m_Layer: 0
   m_Name: StarXyziView
   m_TagString: Untagged
@@ -5177,16 +5295,28 @@ VisualEffect:
       - m_Value: 4
         m_Name: xyzMax
         m_Overridden: 1
-      - m_Value: -100
+      - m_Value: -24
         m_Name: intensityMin
         m_Overridden: 1
-      - m_Value: 0
+      - m_Value: -18
         m_Name: intensityMax
+        m_Overridden: 1
+      - m_Value: 20
+        m_Name: hue
         m_Overridden: 1
     m_Vector2f:
       m_Array: []
     m_Vector3f:
-      m_Array: []
+      m_Array:
+      - m_Value: {x: 315, y: 315, z: 45}
+        m_Name: camPos_angles
+        m_Overridden: 1
+      - m_Value: {x: 6.750833, y: -5.212434, z: -2.7508564}
+        m_Name: camPos_position
+        m_Overridden: 1
+      - m_Value: {x: 1, y: 1, z: 1}
+        m_Name: camPos_scale
+        m_Overridden: 1
     m_Vector4f:
       m_Array: []
     m_Uint:
@@ -5209,6 +5339,37 @@ VisualEffect:
         m_Overridden: 1
     m_Bool:
       m_Array: []
+--- !u!114 &1640125872
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1640125867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fdfea1f838247c40921a07afedde962, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Property:
+    m_Name: camPos
+  Target: {fileID: 1495809441}
+--- !u!114 &1640125873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1640125867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdafc37f32b176349b1684c4455b98e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ExecuteInEditor: 1
+  m_Bindings:
+  - {fileID: 1640125872}
+  m_VisualEffect: {fileID: 1640125871}
 --- !u!1 &1641283433
 GameObject:
   m_ObjectHideFlags: 0
@@ -7122,6 +7283,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2105472870}
+  - component: {fileID: 2105472871}
   m_Layer: 0
   m_Name: Starviz
   m_TagString: Untagged
@@ -7144,8 +7306,29 @@ Transform:
   m_Children:
   - {fileID: 989557157}
   - {fileID: 1640125868}
+  - {fileID: 925050206}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!320 &2105472871
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105472868}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 00f56fa3e38b7d940802d4aa9e77367e, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 2276287157928682819, guid: 00f56fa3e38b7d940802d4aa9e77367e, type: 2}
+    value: {fileID: 1495809442}
+  m_ExposedReferences:
+    m_References:
+    - 117e012b83466234ea0fd2e6ce208d5b: {fileID: 1495809437}
 --- !u!1 &2114919661
 GameObject:
   m_ObjectHideFlags: 0
@@ -12086,3 +12269,4 @@ SceneRoots:
   - {fileID: 1495809441}
   - {fileID: 1870633849}
   - {fileID: 2105472870}
+  - {fileID: 1439239159}
