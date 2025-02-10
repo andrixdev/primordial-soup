@@ -6,7 +6,7 @@ sRGB -> NO
 Alpha Source -> not tested yet
 Alpha is transparency -> not tested yet
 Advanced -> just disable mipmaps and stuff
-Wrap mode -> Repear
+Wrap mode -> Repeat
 Filter mode -> Point (no filter)
 
 in array, Default tab
