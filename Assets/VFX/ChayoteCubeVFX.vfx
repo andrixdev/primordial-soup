@@ -877,7 +877,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Texture3D, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"obj":{"fileID":11700000,"guid":"ebe09fa412ec2874c92239bc5825f364","type":2}}'
+      m_SerializableObject: '{"obj":{"fileID":11700000,"guid":"41eebcd97414b0d4490310e1416d788b","type":2}}'
     m_Space: 2147483647
   m_Property:
     name: DistanceField
@@ -1520,7 +1520,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Texture3D, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"obj":{"fileID":11700000,"guid":"ebe09fa412ec2874c92239bc5825f364","type":2}}'
+      m_SerializableObject: '{"obj":{"fileID":11700000,"guid":"41eebcd97414b0d4490310e1416d788b","type":2}}'
     m_Space: 2147483647
   m_Property:
     name: SDF
