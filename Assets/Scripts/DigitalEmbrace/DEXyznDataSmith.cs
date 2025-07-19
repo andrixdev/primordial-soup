@@ -52,7 +52,7 @@ public class DEXyznDataSmith : MonoBehaviour
 		Read();
 		
 		// Build le textures
-		int quarticRoot = 30; // Keep it a little greater than the quartic root of the number of items, max 127, recommended max 50 (6.250.000 points)
+		int quarticRoot = 35; // Keep it a little greater than the quartic root of the number of items, max 127, recommended max 50 (6.250.000 points)
         CreateTextures(quarticRoot);
 
 		// Save textures in PNG
@@ -85,6 +85,8 @@ public class DEXyznDataSmith : MonoBehaviour
 		for (int i = 0; i < lines.Length; i++)
 		{
 			string[] fields = lines[i].Split(' ');
+
+			
 			float x1 = math.remap(xyzMin, xyzMax, 0.0f, 1.0f, Convert.ToSingle(fields[0], CultureInfo.InvariantCulture));
 			float y1 = math.remap(xyzMin, xyzMax, 0.0f, 1.0f, Convert.ToSingle(fields[1], CultureInfo.InvariantCulture));
 			float z1 = math.remap(xyzMin, xyzMax, 0.0f, 1.0f, Convert.ToSingle(fields[2], CultureInfo.InvariantCulture));
@@ -96,7 +98,23 @@ public class DEXyznDataSmith : MonoBehaviour
 			float id = math.remap(idMin, idMax, 0.0f, 1.0f, Convert.ToSingle(fields[6], CultureInfo.InvariantCulture));
 			float age = math.remap(ageMin, ageMax, 0.0f, 1.0f, Convert.ToSingle(fields[7], CultureInfo.InvariantCulture));
 			
-			DEXyznBit xyzn = new DEXyznBit();
+
+			/*
+			float xyzScale = 0.0001f;
+			float idScale = 0.000001f;
+			float ageScale = 0.001f;
+            float x1 = xyzScale * Convert.ToSingle(fields[0], CultureInfo.InvariantCulture);
+            float y1 = xyzScale * Convert.ToSingle(fields[1], CultureInfo.InvariantCulture);
+            float z1 = xyzScale * Convert.ToSingle(fields[2], CultureInfo.InvariantCulture);
+            float x2 = xyzScale * Convert.ToSingle(fields[3], CultureInfo.InvariantCulture);
+            float y2 = xyzScale * Convert.ToSingle(fields[4], CultureInfo.InvariantCulture);
+            float z2 = xyzScale * Convert.ToSingle(fields[5], CultureInfo.InvariantCulture);
+            //float someFlag = someFlagScale * Convert.ToSingle(fields[6], CultureInfo.InvariantCulture);
+            float id = idScale * Convert.ToSingle(fields[6], CultureInfo.InvariantCulture);
+            float age = ageScale * Convert.ToSingle(fields[7], CultureInfo.InvariantCulture);
+			*/
+
+            DEXyznBit xyzn = new DEXyznBit();
 
 			xyzn.x1 = x1;
 			xyzn.y1 = y1;
@@ -131,9 +149,9 @@ public class DEXyznDataSmith : MonoBehaviour
 		Color[] colorArray3 = new Color[size * size * size * size];
 		
 		// RGBAHalf is sufficient as we're using floats to parse data and not doubles, RGBAFloat might be needed if we parse to doubles
-		texture1 = new Texture2D(size * size, size * size, TextureFormat.RGBAFloat, true); 
-		texture2 = new Texture2D(size * size, size * size, TextureFormat.RGBAFloat, true);
-		texture3 = new Texture2D(size * size, size * size, TextureFormat.RGBAFloat, true);
+		texture1 = new Texture2D(size * size, size * size, TextureFormat.RGBAHalf, true); 
+		texture2 = new Texture2D(size * size, size * size, TextureFormat.RGBAHalf, true);
+		texture3 = new Texture2D(size * size, size * size, TextureFormat.RGBAHalf, true);
 		
 		// Single loop to inject data array values in textures
 		float r = 1.0f / (size - 1.0f);
@@ -194,14 +212,30 @@ public class DEXyznDataSmith : MonoBehaviour
 	private void SaveTextures()
 	{
 		float time = Time.realtimeSinceStartup;
-		
-		byte[] bytes1 = texture1.EncodeToPNG();//ImageConversion.EncodeToPNG(texture1);
-		byte[] bytes2 = texture2.EncodeToPNG();
-		byte[] bytes3 = texture3.EncodeToPNG();
+
+        /*
+        byte[] bytes1 = ImageConversion.EncodeToPNG(texture1);
+        byte[] bytes2 = ImageConversion.EncodeToPNG(texture2);
+        byte[] bytes3 = ImageConversion.EncodeToPNG(texture3);
+		*/
+
+        /*
+        byte[] bytes1 = texture1.EncodeToPNG();//ImageConversion.EncodeToPNG(texture1);
+        byte[] bytes2 = texture2.EncodeToPNG();
+        byte[] bytes3 = texture3.EncodeToPNG();
 
 		System.IO.File.WriteAllBytes(Application.dataPath + "/Data/" + textAsset.name + "_texture1.png", bytes1);
 		System.IO.File.WriteAllBytes(Application.dataPath + "/Data/" + textAsset.name + "_texture2.png", bytes2);
 		System.IO.File.WriteAllBytes(Application.dataPath + "/Data/" + textAsset.name + "_texture3.png", bytes3);
+		*/
+
+        byte[] bytes1 = ImageConversion.EncodeToEXR(texture1);
+        byte[] bytes2 = ImageConversion.EncodeToEXR(texture2);
+        byte[] bytes3 = ImageConversion.EncodeToEXR(texture3);
+
+        System.IO.File.WriteAllBytes(Application.dataPath + "/Data/" + textAsset.name + "_texture1.exr", bytes1);
+		System.IO.File.WriteAllBytes(Application.dataPath + "/Data/" + textAsset.name + "_texture2.exr", bytes2);
+		System.IO.File.WriteAllBytes(Application.dataPath + "/Data/" + textAsset.name + "_texture3.exr", bytes3);
 	
 		Debug.Log("<color=#ff33ccff>[DEXyznDataSmith] Encoded and saved textures in " + (Time.realtimeSinceStartup - time) + " seconds 👌</color>");
 			

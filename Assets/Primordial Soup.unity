@@ -929,7 +929,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ExecuteInEditor: 1
-  m_Bindings: []
+  m_Bindings:
+  - {fileID: 138938363}
+  - {fileID: 138938362}
+  - {fileID: 138938361}
+  - {fileID: 138938360}
+  - {fileID: 138938359}
+  - {fileID: 138938358}
+  - {fileID: 138938357}
+  - {fileID: 138938356}
+  - {fileID: 138938355}
+  - {fileID: 138938354}
+  - {fileID: 138938353}
+  - {fileID: 138938352}
+  - {fileID: 138938351}
+  - {fileID: 138938350}
+  - {fileID: 138938349}
+  - {fileID: 138938348}
   m_VisualEffect: {fileID: 138938366}
 --- !u!73398921 &138938365
 VFXRenderer:
@@ -2171,7 +2187,7 @@ GameObject:
   - component: {fileID: 306347224}
   - component: {fileID: 306347223}
   - component: {fileID: 306347222}
-  - component: {fileID: 306347221}
+  - component: {fileID: 306347225}
   m_Layer: 0
   m_Name: Growth (activate once texture generated)
   m_TagString: Untagged
@@ -2179,19 +2195,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &306347221
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 306347220}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80fb89f2623abf14eb9139a8909124fa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dataSmith: {fileID: 1470443998}
 --- !u!73398921 &306347222
 VFXRenderer:
   serializedVersion: 1
@@ -2283,6 +2286,52 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
+  m_Father: {fileID: 1353332356}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &306347225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 306347220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80fb89f2623abf14eb9139a8909124fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dataSmith: {fileID: 0}
+--- !u!1 &356668036
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 356668037}
+  m_Layer: 0
+  m_Name: New
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &356668037
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 356668036}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2136168152}
+  - {fileID: 820957390}
   m_Father: {fileID: 845242702}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &366939770
@@ -2619,7 +2668,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ExecuteInEditor: 1
-  m_Bindings: []
+  m_Bindings:
+  - {fileID: 378083525}
+  - {fileID: 378083524}
+  - {fileID: 378083523}
+  - {fileID: 378083522}
+  - {fileID: 378083521}
+  - {fileID: 378083520}
+  - {fileID: 378083519}
+  - {fileID: 378083518}
+  - {fileID: 378083517}
+  - {fileID: 378083516}
+  - {fileID: 378083515}
+  - {fileID: 378083514}
+  - {fileID: 378083513}
+  - {fileID: 378083512}
+  - {fileID: 378083511}
+  - {fileID: 378083510}
   m_VisualEffect: {fileID: 378083528}
 --- !u!73398921 &378083527
 VFXRenderer:
@@ -4349,7 +4414,7 @@ GameObject:
   - component: {fileID: 820957390}
   - component: {fileID: 820957389}
   m_Layer: 0
-  m_Name: Digital Embrace Smith (modern way but failed)
+  m_Name: Digital Embrace Smith (EXR tex generator)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4389,7 +4454,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 845242702}
+  m_Father: {fileID: 356668037}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &824689133
 GameObject:
@@ -4826,12 +4891,12 @@ GameObject:
   m_Component:
   - component: {fileID: 845242702}
   m_Layer: 0
-  m_Name: Digital Embrace
+  m_Name: Digital Embrace (all)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &845242702
 Transform:
   m_ObjectHideFlags: 0
@@ -4845,10 +4910,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 306347224}
-  - {fileID: 1470443999}
-  - {fileID: 2136168152}
-  - {fileID: 820957390}
+  - {fileID: 1353332356}
+  - {fileID: 356668037}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &890635753
@@ -5577,7 +5640,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ExecuteInEditor: 1
-  m_Bindings: []
+  m_Bindings:
+  - {fileID: 1024757064}
+  - {fileID: 1024757063}
   m_VisualEffect: {fileID: 1024757061}
 --- !u!1 &1034896811
 GameObject:
@@ -6586,6 +6651,39 @@ VisualEffect:
       m_Array: []
     m_Bool:
       m_Array: []
+--- !u!1 &1353332355
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1353332356}
+  m_Layer: 0
+  m_Name: Old
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1353332356
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1353332355}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 306347224}
+  - {fileID: 1470443999}
+  m_Father: {fileID: 845242702}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1399643783
 GameObject:
   m_ObjectHideFlags: 0
@@ -7144,7 +7242,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1470443998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7179,7 +7277,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 845242702}
+  m_Father: {fileID: 1353332356}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1474329096
 GameObject:
@@ -8623,7 +8721,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ExecuteInEditor: 1
-  m_Bindings: []
+  m_Bindings:
+  - {fileID: 1640125872}
   m_VisualEffect: {fileID: 1640125871}
 --- !u!1 &1661720184
 GameObject:
@@ -11243,12 +11342,12 @@ GameObject:
   - component: {fileID: 2136168151}
   - component: {fileID: 2136168150}
   m_Layer: 0
-  m_Name: Digital Embrace (modern way but failed)
+  m_Name: Digital Embrace
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!73398921 &2136168150
 VFXRenderer:
   serializedVersion: 1
@@ -11257,7 +11356,7 @@ VFXRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2136168149}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -11324,7 +11423,16 @@ VisualEffect:
     m_Gradient:
       m_Array: []
     m_NamedObject:
-      m_Array: []
+      m_Array:
+      - m_Value: {fileID: 2800000, guid: 70c02d0ab2cefeb4cb0b6ac107e647c0, type: 3}
+        m_Name: Texture1
+        m_Overridden: 1
+      - m_Value: {fileID: 2800000, guid: 7c2c7f417ad7c00449ae49b61d9b327f, type: 3}
+        m_Name: Texture2
+        m_Overridden: 1
+      - m_Value: {fileID: 2800000, guid: 7f79132bc727427489b3d2155d92829e, type: 3}
+        m_Name: Texture3
+        m_Overridden: 1
     m_Bool:
       m_Array: []
 --- !u!4 &2136168152
@@ -11340,7 +11448,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 845242702}
+  m_Father: {fileID: 356668037}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2136626860
 GameObject:
@@ -15540,7 +15648,7 @@ VisualEffect:
       m_Array: []
     m_NamedObject:
       m_Array:
-      - m_Value: {fileID: 11700000, guid: 5db4318d1c3888a468866f48b5093a18, type: 2}
+      - m_Value: {fileID: 11700000, guid: 4b17b7814dd6883448dcd0f43937a5c3, type: 2}
         m_Name: TheTex
         m_Overridden: 1
     m_Bool:
@@ -16041,7 +16149,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3738120162231893765
 Transform:
   m_ObjectHideFlags: 0
