@@ -136,7 +136,7 @@ MonoBehaviour:
   m_OutputSlots: []
   m_ExposedName: p1
   m_Exposed: 0
-  m_Order: 1
+  m_Order: 0
   m_Category: 
   m_Min:
     m_Type:
@@ -182,7 +182,7 @@ MonoBehaviour:
   m_OutputSlots: []
   m_ExposedName: p2
   m_Exposed: 0
-  m_Order: 2
+  m_Order: 1
   m_Category: 
   m_Min:
     m_Type:
@@ -994,7 +994,7 @@ MonoBehaviour:
   m_OutputSlots: []
   m_ExposedName: p3
   m_Exposed: 0
-  m_Order: 6
+  m_Order: 2
   m_Category: 
   m_Min:
     m_Type:
@@ -1075,7 +1075,7 @@ MonoBehaviour:
   - {fileID: 65}
   m_ExposedName: c4
   m_Exposed: 1
-  m_Order: 7
+  m_Order: 3
   m_Category: 
   m_Min:
     m_Type:
@@ -1235,7 +1235,7 @@ MonoBehaviour:
   - {fileID: 69}
   m_ExposedName: c5
   m_Exposed: 1
-  m_Order: 8
+  m_Order: 4
   m_Category: 
   m_Min:
     m_Type:
