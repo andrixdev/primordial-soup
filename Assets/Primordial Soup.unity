@@ -6833,20 +6833,44 @@ VisualEffect:
   m_PropertySheet:
     m_Float:
       m_Array:
-      - m_Value: 0.4
+      - m_Value: 0
         m_Name: y0span
         m_Overridden: 1
-      - m_Value: 0.3
+      - m_Value: 0.17
         m_Name: x0span
         m_Overridden: 1
       - m_Value: -1
         m_Name: xSpawnCenter
         m_Overridden: 1
-      - m_Value: -0.1
+      - m_Value: -0.2
         m_Name: center2
         m_Overridden: 1
-      - m_Value: 0.1
+      - m_Value: 0.2
         m_Name: center1
+        m_Overridden: 1
+      - m_Value: 1
+        m_Name: v0
+        m_Overridden: 1
+      - m_Value: 24.6
+        m_Name: ys
+        m_Overridden: 1
+      - m_Value: 37.08
+        m_Name: r0
+        m_Overridden: 1
+      - m_Value: 0
+        m_Name: rMultExponent
+        m_Overridden: 1
+      - m_Value: 10
+        m_Name: gaussExponent
+        m_Overridden: 1
+      - m_Value: 53
+        m_Name: cosineFactor
+        m_Overridden: 1
+      - m_Value: 4.71
+        m_Name: dt
+        m_Overridden: 1
+      - m_Value: 394.9
+        m_Name: torqueAmplitude
         m_Overridden: 1
     m_Vector2f:
       m_Array: []
