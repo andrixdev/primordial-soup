@@ -106,8 +106,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 796
     y: -386
-    width: 724
-    height: 266
+    width: 726
+    height: 264
 --- !u!114 &33
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -405,7 +405,7 @@ MonoBehaviour:
   - {fileID: 42}
   m_ExposedName: c1
   m_Exposed: 1
-  m_Order: 6
+  m_Order: 1
   m_Category: 
   m_Min:
     m_Type:
@@ -558,7 +558,7 @@ MonoBehaviour:
   - {fileID: 46}
   m_ExposedName: c2
   m_Exposed: 1
-  m_Order: 7
+  m_Order: 2
   m_Category: 
   m_Min:
     m_Type:
@@ -711,7 +711,7 @@ MonoBehaviour:
   m_OutputSlots: []
   m_ExposedName: c
   m_Exposed: 0
-  m_Order: 1
+  m_Order: 0
   m_Category: 
   m_Min:
     m_Type:

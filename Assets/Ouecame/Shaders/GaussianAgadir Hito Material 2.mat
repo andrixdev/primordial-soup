@@ -90,23 +90,23 @@ Material:
     - _ZTestDepthEqualForOpaque: 4
     - _ZTestTransparent: 4
     - _ZWrite: 0
-    - _alphaScale: 48.4
+    - _alphaScale: 13.7
     - _center1: 0
     - _center2: 94.23
     - _extremeSampling: 0
     - _lightAbsorb: 1
     - _multiSampling: 0
     - _multiSamplingRad: 1
-    - _numSteps: 19
+    - _numSteps: 18.94
     - _polishDistance: 1
     - _power1: 1
-    - _power2: 1
+    - _power2: 0.4
     - _scale1: 0
-    - _scale2: 15.93
-    - _sigma1: 5
-    - _sigma2: 5
+    - _scale2: 12.8
+    - _sigma1: 4
+    - _sigma2: 9.84
     - _stepSize: 0.0033
-    - _transmittance: 68.8
+    - _transmittance: 68.9
     m_Colors:
     - _Color1: {r: 0, g: 0.7548108, b: 1, a: 0}
     - _Color2: {r: 1, g: 1, b: 1, a: 0}

@@ -92,23 +92,23 @@ Material:
     - _ZWrite: 0
     - _alphaScale: 18.76
     - _center1: 0
-    - _center2: 100
+    - _center2: 99.28
     - _extremeSampling: 0
-    - _lightAbsorb: 1
+    - _lightAbsorb: 0.51
     - _multiSampling: 0
     - _multiSamplingRad: 1
     - _numSteps: 8.45
     - _polishDistance: 1
     - _power1: 1
-    - _power2: 1
+    - _power2: 0.8
     - _scale1: 0
-    - _scale2: 10
-    - _sigma1: 10
-    - _sigma2: 15
+    - _scale2: 15.42
+    - _sigma1: 8.4
+    - _sigma2: 28.1
     - _stepSize: 0.0033
-    - _transmittance: 15
+    - _transmittance: 13.85
     m_Colors:
-    - _Color1: {r: 1, g: 0.38384712, b: 0, a: 0}
+    - _Color1: {r: 0.35943308, g: 0.8415094, b: 0, a: 0}
     - _Color2: {r: 1, g: 1, b: 1, a: 0}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
