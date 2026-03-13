@@ -106,17 +106,17 @@ Material:
     - _ZTestDepthEqualForOpaque: 4
     - _ZTestTransparent: 4
     - _ZWrite: 0
-    - _alphaScale: 4.3
-    - _cartoonThreshold: 48.7
-    - _cartoonize: 1
+    - _alphaScale: 45.5
+    - _cartoonThreshold: 54.2
+    - _cartoonize: 0
     - _darknessThreshold: 0
-    - _densityScale: 10.3
-    - _lightAbsorb: 87.4
-    - _numLightSteps: 1
+    - _densityScale: 2.16
+    - _lightAbsorb: 5.8
+    - _numLightSteps: 20
     - _numSteps: 300
     - _stepSize: 0.001
-    - _stopThreshold: 56.6
-    - _transmittance: 19.9
+    - _stopThreshold: 49.08
+    - _transmittance: 3.1
     m_Colors:
     - _Color: {r: 0, g: 0.7472093, b: 1, a: 0}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}

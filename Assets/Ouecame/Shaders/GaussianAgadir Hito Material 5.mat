@@ -93,11 +93,11 @@ Material:
     - _alphaScale: 14.7
     - _center1: 0
     - _center2: 81
-    - _extremeSampling: 0
+    - _extremeSampling: 1
     - _lightAbsorb: 1
-    - _multiSampling: 0
+    - _multiSampling: 1
     - _multiSamplingRad: 1
-    - _numSteps: 300
+    - _numSteps: 1000
     - _polishDistance: 1
     - _power1: 1
     - _power2: 1
@@ -105,7 +105,7 @@ Material:
     - _scale2: 19.5
     - _sigma1: 5.78
     - _sigma2: 5
-    - _stepSize: 0.0033
+    - _stepSize: 0.00133
     - _transmittance: 1.8
     m_Colors:
     - _Color1: {r: 1, g: 0.38384706, b: 0, a: 0}
