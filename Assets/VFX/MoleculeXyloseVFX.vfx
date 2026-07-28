@@ -466,8 +466,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: -1439
     y: -549
-    width: 5039
-    height: 4129
+    width: 5038
+    height: 4126
 --- !u!114 &114350483966674976
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1388,7 +1388,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Texture2D, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"obj":{"fileID":2800000,"guid":"d82609c76bc2d6c4fa5200c5e551b560","type":3}}'
+      m_SerializableObject: '{"obj":{"fileID":2800000,"guid":"4cc7b4f0ce08b2943adc824b3a6a9ee4","type":3}}'
     m_Space: -1
   m_Property:
     name: mainTexture
@@ -15802,7 +15802,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 415.2
+      m_SerializableObject: 420.1
     m_Space: -1
   m_Property:
     name: 
@@ -29284,7 +29284,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 4
+      m_SerializableObject: 1.15
     m_Space: -1
   m_Property:
     name: _Alpha
