@@ -5395,23 +5395,41 @@ VisualEffect:
   m_PropertySheet:
     m_Float:
       m_Array:
-      - m_Value: 7.6
+      - m_Value: 10
         m_Name: dt
         m_Overridden: 1
-      - m_Value: 6
+      - m_Value: 1
         m_Name: x1crea
         m_Overridden: 1
-      - m_Value: 80.11
+      - m_Value: 0
         m_Name: x1dest
         m_Overridden: 1
-      - m_Value: 9.5
+      - m_Value: 7
         m_Name: radius
         m_Overridden: 1
-      - m_Value: 0.19
+      - m_Value: 1
         m_Name: k2
         m_Overridden: 1
-      - m_Value: 0.96
+      - m_Value: 1
         m_Name: k1
+        m_Overridden: 1
+      - m_Value: 1
+        m_Name: x2crea
+        m_Overridden: 1
+      - m_Value: 0
+        m_Name: x2dest
+        m_Overridden: 1
+      - m_Value: 0
+        m_Name: x3crea
+        m_Overridden: 1
+      - m_Value: 10
+        m_Name: x3dest
+        m_Overridden: 1
+      - m_Value: 4.8
+        m_Name: lifetime
+        m_Overridden: 1
+      - m_Value: 1000000
+        m_Name: spawnRate
         m_Overridden: 1
     m_Vector2f:
       m_Array: []
@@ -5433,7 +5451,7 @@ VisualEffect:
       m_Array: []
     m_Bool:
       m_Array:
-      - m_Value: 1
+      - m_Value: 0
         m_Name: killNegativeValues
         m_Overridden: 1
 --- !u!1 &645186942
